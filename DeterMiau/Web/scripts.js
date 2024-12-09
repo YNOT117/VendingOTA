@@ -1,4 +1,3 @@
-
 function ObtenerRedes() {
 
     xhttp = new XMLHttpRequest();

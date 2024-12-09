@@ -10,31 +10,49 @@
  
    <body>
 
-   <form id="form" action="/ConectarWiFi" method="get">
+      <form id="form" action="/ConectarWiFi" method="get">
 
-      <img id="logo" src="./DeterMiauLogo.png">
+         <img id="logo" src="./DeterMiauLogo.png">
 
-      <p id="titulo">Redes disponibles</p>
-
-      <select id="selector" name="SSID" ></select>
-
-      <input type="text" name="PASS" placeholder="Contraseña WiFi" class="css-input">
-      </br>
-      <input type="text" name="Token" placeholder="Token De Telegram" class="css-input">      
-      </br>
-
-      <div>
-         <button class="myButton" type="button" onclick="ObtenerRedes()">Buscar</button>
-         <button class="myButton" type="submit">Conectar</button>
-      </div>
-      <div id="loading" style="display:none;">
-         <div class="image">
-             <img src="./cargando.gif" alt="Cargando..."> 
+         <div class="section">
+            <p id="titulo">1. Redes disponibles</p>
+            <select id="selector" name="SSID" ></select>
+            <input type="text" name="PASS" placeholder="Contraseña WiFi" class="css-input">
+            </br>
+            <button class="myButton" type="button" onclick="ObtenerRedes()">Buscar</button>
+            </br>
          </div>
-     </div>
-   </form> 
-   
- 
+
+
+         <div class="section">
+            <p id="titulo">2. Cuenta DeterMiau</p>
+            <input type="text" name="Correo" placeholder="Correo" class="css-input">      
+            </br>
+            <input type="text" name="Password" placeholder="Contraseña" class="css-input">      
+            </br>
+            <input type="text" name="Nombre" placeholder="Nombre del despachador" class="css-input">      
+            </br>
+            <input type="text" name="Token" placeholder="Token de Telegram" class="css-input">      
+            </br>
+         </div>
+
+
+         <div class="section">
+            <p id="titulo">3. Enviar informacion a la tarjeta</p>
+            <button class="myButton" type="submit">Conectar</button>
+         </div>
+
+
+
+         <div id="loading" style="display:none;">
+            <div class="image">
+               <img src="./cargando.gif" alt="Cargando..."> 
+            </div>
+         </div>
+
+
+      </form> 
+
    </body>
 
    <script type="text/javascript" src="./scripts.js"></script>
