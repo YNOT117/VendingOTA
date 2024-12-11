@@ -150,6 +150,7 @@ select{
 		text-decoration: none;
 		border-radius: 20px;
 		display: flex;
+		
 		justify-content: center;
 	}
 
